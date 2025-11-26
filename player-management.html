@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Management</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="
+https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.85.0/dist/umd/supabase.min.js
+"></script>
+  <script src="lib/supabase.js"></script>
+</head>
+<body>
+  <div class="player-management-container">
+    <h1>Player Management</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Wins</th>
+          <th>Losses</th>
+          <th>Tier</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="playerTable"></tbody>
+    </table>
+
+    <p id="playerMessage" class="message"></p>
+  </div>
+
+  <script src="js/player-management.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="
+https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.85.0/dist/umd/supabase.min.js
+"></script>
+  <script src="lib/supabase.js"></script>
+</head>
+<body>
+  <div class="player-management-container">
+    <h1 id="playerName"></h1>
+    <p id="playerEmail"></p>
+    <p id="playerTier"></p>
+    <p id="playerRecord"></p>
+
+    <h2>Tournament History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tournament</th>
+          <th>Game</th>
+          <th>Wins</th>
+          <th>Losses</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody id="historyTable"></tbody>
+    </table>
+
+    <p id="profileMessage" class="message"></p>
+  </div>
+
+  <script src="js/player.js"></script>
+</body>
+</html>

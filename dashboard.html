@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Tournaments</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="
+https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.85.0/dist/umd/supabase.min.js
+"></script>
+  <script src="lib/supabase.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tournament Dashboard</h1>
+    <div class="filter-search">
+      <input type="text" id="searchInput" placeholder="Search tournaments..." />
+      <select id="gameFilter">
+        <option value="">All Games</option>
+      </select>
+      <select id="statusFilter">
+        <option value="">All Status</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="live">Live</option>
+        <option value="finished">Finished</option>
+      </select>
+    </div>
+    <button id="createTournamentBtn">+ Create Tournament</button>
+  </header>
+
+  <main>
+    <div id="tournamentCards" class="cards-container"></div>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

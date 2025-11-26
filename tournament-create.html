@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Tournament</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="
+https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.85.0/dist/umd/supabase.min.js
+"></script>
+  <script src="lib/supabase.js"></script>
+</head>
+<body>
+  <div class="tournament-create-container">
+    <h1>Create Tournament</h1>
+    <form id="createTournamentForm">
+      <input type="text" id="tournamentName" placeholder="Tournament Name" required />
+      <select id="gameSelect" required>
+        <option value="">Select Game</option>
+      </select>
+      <input type="date" id="startDate" placeholder="Start Date" required />
+      <input type="date" id="endDate" placeholder="End Date" required />
+      <textarea id="description" placeholder="Tournament Description"></textarea>
+      <button type="submit">Create Tournament</button>
+    </form>
+
+    <h2>Add Players</h2>
+    <form id="addPlayerForm">
+      <input type="email" id="playerEmail" placeholder="Player Email" required />
+      <button type="submit">Add Player</button>
+    </form>
+    <div id="playerList"></div>
+
+    <p id="message" class="message"></p>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
